@@ -20,7 +20,9 @@ const text = "Отец мой Андрей Петрович Гринев в мо
     "Нас было девять человек детей. Все мои братья и сестры умерли во младенчестве."
 
 // create an array of words from string
-let words = text.split(/[ ,.;:-]+/);
+let words = text.split(/[ ,.;:-]+/).filter(function (el) {
+    return el.length !== 0
+});
 
 // fill fill the object with key-value pairs.
 // Where the key is a word from string array
