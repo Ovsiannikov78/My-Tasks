@@ -1,4 +1,4 @@
-package Task_2;
+package Task_findFactorsForNumberN;
 
 import org.junit.jupiter.api.Test;
 
@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * {1, 5, 5, 8, 20} & 25 -> true;
  * {1, 5, 8, 20} & 25 -> false;
  */
+
 
 
 class Solution2Test {
@@ -64,5 +65,14 @@ class Solution2Test {
         boolean act = solution2.findFactorsForNumberN(numbers, 25);
 
         assertFalse(act);
+    }
+
+    @Test
+    public void testSolution2_6() {
+        List<Integer> numbers = Arrays.asList(1, 5, 8, 20);
+
+        boolean act = solution2.findFactorsForNumberN(numbers, 100);
+
+        assertTrue(act);
     }
 }

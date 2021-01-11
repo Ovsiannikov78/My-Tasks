@@ -1,4 +1,4 @@
-package Task_3;
+package Task_mostDuplicateNumber;
 
 import org.junit.jupiter.api.Test;
 
